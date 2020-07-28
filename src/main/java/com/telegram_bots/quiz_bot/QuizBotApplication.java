@@ -12,7 +12,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
-
+//Main app
 @SpringBootApplication
 public class QuizBotApplication {
 
