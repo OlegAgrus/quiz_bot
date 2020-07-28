@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="QuizBotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="quiz_bot" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.telegram_bots.quiz_bot.QuizBotApplication" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <envs>
+      <env name="BOT_USERNAME" value="InfoProviderBot" />
+      <env name="BOT_TOKEN" value="1291346599:AAGDPMAJ24sWGSzUQm6aTLovZeYyrqh_m-4" />
+    </envs>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
