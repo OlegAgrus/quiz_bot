@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="718230d0-b1ba-4404-aa89-6f22b5c26182" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/QuizBotApplication.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/QuizBotApplication.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/impl/AnswerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/impl/AnswerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/impl/QuestionServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +72,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.telegram_bots.quiz_bot.bot.services.impl" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\My\Work\projects\Telegram\TelegramQuizBot\quiz_bot\quiz_bot\src\main\java\com\telegram_bots\quiz_bot" />
     </key>
@@ -87,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595950837312</updated>
       <workItem from="1595950840008" duration="1340000" />
-      <workItem from="1596023488379" duration="6997000" />
+      <workItem from="1596023488379" duration="7301000" />
     </task>
     <servers />
   </component>
@@ -154,9 +157,9 @@
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state x="156" y="30" key="SettingsEditor/0.30.1536.834@0.30.1536.834" timestamp="1596027691589" />
-    <state x="361" y="180" key="Vcs.Push.Dialog.v2" timestamp="1596024356950">
+    <state x="361" y="180" key="Vcs.Push.Dialog.v2" timestamp="1596032840190">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state x="361" y="180" key="Vcs.Push.Dialog.v2/0.30.1536.834@0.30.1536.834" timestamp="1596024356950" />
+    <state x="361" y="180" key="Vcs.Push.Dialog.v2/0.30.1536.834@0.30.1536.834" timestamp="1596032840190" />
   </component>
 </project>
