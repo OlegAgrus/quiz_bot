@@ -27,4 +27,4 @@ build/
 .vscode/
 
 #Intellij idea
-.idea/
+.idea/workspace.xml
