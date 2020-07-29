@@ -13,12 +13,13 @@ import java.util.Set;
 public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "question_id")
     private Long questionId;
 
-    @Column(nullable = false)
+    @Column(name = "question_text", nullable = false)
     private String questionText;
 
-    @Column(precision = 2, scale = 1, nullable = false)
+    @Column(name = "question_score", precision = 2, scale = 1, nullable = false)
     private Double questionScore;
 
     @OneToMany(mappedBy = "question")
