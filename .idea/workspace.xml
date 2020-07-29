@@ -20,14 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="718230d0-b1ba-4404-aa89-6f22b5c26182" name="Default Changelist" comment="minor change">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/QuizBotApplication.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/QuizBotApplication.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/QuizBotApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/QuizBotApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/entity/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/entity/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/repos/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/repos/QuestionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/impl/AnswerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/impl/AnswerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/impl/QuestionServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="entities_added" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -96,6 +90,7 @@
       <updated>1595950837312</updated>
       <workItem from="1595950840008" duration="1340000" />
       <workItem from="1596023488379" duration="7301000" />
+      <workItem from="1596049216472" duration="563000" />
     </task>
     <servers />
   </component>
@@ -112,6 +107,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="85" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596046141593">
@@ -122,49 +118,57 @@
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state x="147" y="96" key="DiffContextDialog/0.30.1536.834@0.30.1536.834" timestamp="1596024349220" />
-    <state width="1493" height="388" key="GridCell.Tab.0.bottom" timestamp="1596048232736">
+    <state width="1493" height="388" key="GridCell.Tab.0.bottom" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="388" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1596048232736" />
-    <state width="1493" height="388" key="GridCell.Tab.0.center" timestamp="1596048232736">
+    <state width="1493" height="388" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
+    <state width="1493" height="388" key="GridCell.Tab.0.center" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="388" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1596048232736" />
-    <state width="1493" height="388" key="GridCell.Tab.0.left" timestamp="1596048232736">
+    <state width="1493" height="388" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
+    <state width="1493" height="388" key="GridCell.Tab.0.left" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="388" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1596048232736" />
-    <state width="1493" height="388" key="GridCell.Tab.0.right" timestamp="1596048232736">
+    <state width="1493" height="388" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
+    <state width="1493" height="388" key="GridCell.Tab.0.right" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="388" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1596048232736" />
-    <state width="1493" height="388" key="GridCell.Tab.1.bottom" timestamp="1596048232737">
+    <state width="1493" height="388" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
+    <state width="1493" height="388" key="GridCell.Tab.1.bottom" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="388" key="GridCell.Tab.1.bottom/0.30.1536.834@0.30.1536.834" timestamp="1596048232737" />
-    <state width="1493" height="388" key="GridCell.Tab.1.center" timestamp="1596048232736">
+    <state width="1493" height="388" key="GridCell.Tab.1.bottom/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
+    <state width="1493" height="388" key="GridCell.Tab.1.center" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="388" key="GridCell.Tab.1.center/0.30.1536.834@0.30.1536.834" timestamp="1596048232736" />
-    <state width="1493" height="388" key="GridCell.Tab.1.left" timestamp="1596048232736">
+    <state width="1493" height="388" key="GridCell.Tab.1.center/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
+    <state width="1493" height="388" key="GridCell.Tab.1.left" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="388" key="GridCell.Tab.1.left/0.30.1536.834@0.30.1536.834" timestamp="1596048232736" />
-    <state width="1493" height="388" key="GridCell.Tab.1.right" timestamp="1596048232737">
+    <state width="1493" height="388" key="GridCell.Tab.1.left/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
+    <state width="1493" height="388" key="GridCell.Tab.1.right" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="388" key="GridCell.Tab.1.right/0.30.1536.834@0.30.1536.834" timestamp="1596048232737" />
+    <state width="1493" height="388" key="GridCell.Tab.1.right/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
     <state x="383" y="95" key="Maven.ArtifactSearchDialog" timestamp="1596023637401">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state x="383" y="95" key="Maven.ArtifactSearchDialog/0.30.1536.834@0.30.1536.834" timestamp="1596023637401" />
-    <state x="156" y="30" key="SettingsEditor" timestamp="1596027691589">
+    <state x="200" y="136" key="MergeDialog" timestamp="1596048863825">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state x="156" y="30" key="SettingsEditor/0.30.1536.834@0.30.1536.834" timestamp="1596027691589" />
-    <state x="361" y="180" key="Vcs.Push.Dialog.v2" timestamp="1596039953621">
+    <state x="200" y="136" key="MergeDialog/0.30.1536.834@0.30.1536.834" timestamp="1596048863825" />
+    <state x="575" y="314" key="MultipleFileMergeDialog" timestamp="1596048874923">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state x="361" y="180" key="Vcs.Push.Dialog.v2/0.30.1536.834@0.30.1536.834" timestamp="1596039953621" />
+    <state x="575" y="314" key="MultipleFileMergeDialog/0.30.1536.834@0.30.1536.834" timestamp="1596048874923" />
+    <state x="156" y="30" key="SettingsEditor" timestamp="1596049232522">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="156" y="30" key="SettingsEditor/0.30.1536.834@0.30.1536.834" timestamp="1596049232522" />
+    <state x="361" y="180" key="Vcs.Push.Dialog.v2" timestamp="1596049505886">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="361" y="180" key="Vcs.Push.Dialog.v2/0.30.1536.834@0.30.1536.834" timestamp="1596049505886" />
   </component>
 </project>

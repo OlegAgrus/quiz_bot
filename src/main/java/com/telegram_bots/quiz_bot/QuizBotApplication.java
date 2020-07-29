@@ -1,6 +1,7 @@
 package com.telegram_bots.quiz_bot;
 
 import com.telegram_bots.quiz_bot.bot.TelegramInfoProviderBot;
+import com.telegram_bots.quiz_bot.bot.services.QuestionService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
