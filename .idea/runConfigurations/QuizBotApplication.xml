@@ -4,8 +4,11 @@
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.telegram_bots.quiz_bot.QuizBotApplication" />
     <option name="ALTERNATIVE_JRE_PATH" />
     <envs>
-      <env name="BOT_USERNAME" value="InfoProviderBot" />
-      <env name="BOT_TOKEN" value="1291346599:AAGDPMAJ24sWGSzUQm6aTLovZeYyrqh_m-4" />
+      <env name="BOT_USERNAME" value="YmiRRBot" />
+      <env name="BOT_TOKEN" value="1340669046:AAHWZrvAjyIg79U7FDnFU8BED8_taaMzFQQ" />
+      <env name="DATABASE_URL" value="jdbc:mysql://localhost:3306/telegram_quiz" />
+      <env name="DATABASE_USER" value="root" />
+      <env name="DATABASE_PASS" value="pass" />
     </envs>
     <method v="2">
       <option name="Make" enabled="true" />
