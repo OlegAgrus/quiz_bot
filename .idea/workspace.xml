@@ -20,17 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="718230d0-b1ba-4404-aa89-6f22b5c26182" name="Default Changelist" comment="minor change">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/QuizBotApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/QuizBotApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/entity/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/entity/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/entity/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/entity/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/repos/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/repos/QuestionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/AnswerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/AnswerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/impl/AnswerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/impl/AnswerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telegram_bots/quiz_bot/bot/services/impl/QuestionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,8 +91,6 @@
       <workItem from="1595950840008" duration="1340000" />
       <workItem from="1596023488379" duration="7301000" />
       <workItem from="1596049216472" duration="563000" />
-      <workItem from="1596051199507" duration="321000" />
-      <workItem from="1596099635546" duration="6846000" />
     </task>
     <servers />
   </component>
@@ -125,46 +114,42 @@
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state x="85" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1536.834@0.30.1536.834" timestamp="1596046141593" />
-    <state x="574" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1596107803504">
+    <state x="147" y="96" key="DiffContextDialog" timestamp="1596024349220">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state x="574" y="153" key="#com.intellij.ide.util.MemberChooser/0.30.1536.834@0.30.1536.834" timestamp="1596107803504" />
-    <state x="147" y="96" key="DiffContextDialog" timestamp="1596051304396">
+    <state x="147" y="96" key="DiffContextDialog/0.30.1536.834@0.30.1536.834" timestamp="1596024349220" />
+    <state width="1493" height="388" key="GridCell.Tab.0.bottom" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state x="147" y="96" key="DiffContextDialog/0.30.1536.834@0.30.1536.834" timestamp="1596051304396" />
-    <state width="1493" height="403" key="GridCell.Tab.0.bottom" timestamp="1596108988462">
+    <state width="1493" height="388" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
+    <state width="1493" height="388" key="GridCell.Tab.0.center" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="403" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1596108988462" />
-    <state width="1493" height="403" key="GridCell.Tab.0.center" timestamp="1596108988462">
+    <state width="1493" height="388" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
+    <state width="1493" height="388" key="GridCell.Tab.0.left" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="403" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1596108988462" />
-    <state width="1493" height="403" key="GridCell.Tab.0.left" timestamp="1596108988462">
+    <state width="1493" height="388" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
+    <state width="1493" height="388" key="GridCell.Tab.0.right" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="403" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1596108988462" />
-    <state width="1493" height="403" key="GridCell.Tab.0.right" timestamp="1596108988462">
+    <state width="1493" height="388" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
+    <state width="1493" height="388" key="GridCell.Tab.1.bottom" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="403" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1596108988462" />
-    <state width="1493" height="403" key="GridCell.Tab.1.bottom" timestamp="1596108988462">
+    <state width="1493" height="388" key="GridCell.Tab.1.bottom/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
+    <state width="1493" height="388" key="GridCell.Tab.1.center" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="403" key="GridCell.Tab.1.bottom/0.30.1536.834@0.30.1536.834" timestamp="1596108988462" />
-    <state width="1493" height="403" key="GridCell.Tab.1.center" timestamp="1596108988462">
+    <state width="1493" height="388" key="GridCell.Tab.1.center/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
+    <state width="1493" height="388" key="GridCell.Tab.1.left" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="403" key="GridCell.Tab.1.center/0.30.1536.834@0.30.1536.834" timestamp="1596108988462" />
-    <state width="1493" height="403" key="GridCell.Tab.1.left" timestamp="1596108988462">
+    <state width="1493" height="388" key="GridCell.Tab.1.left/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
+    <state width="1493" height="388" key="GridCell.Tab.1.right" timestamp="1596049784163">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="403" key="GridCell.Tab.1.left/0.30.1536.834@0.30.1536.834" timestamp="1596108988462" />
-    <state width="1493" height="403" key="GridCell.Tab.1.right" timestamp="1596108988462">
-      <screen x="0" y="30" width="1536" height="834" />
-    </state>
-    <state width="1493" height="403" key="GridCell.Tab.1.right/0.30.1536.834@0.30.1536.834" timestamp="1596108988462" />
+    <state width="1493" height="388" key="GridCell.Tab.1.right/0.30.1536.834@0.30.1536.834" timestamp="1596049784163" />
     <state x="383" y="95" key="Maven.ArtifactSearchDialog" timestamp="1596023637401">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
@@ -181,13 +166,9 @@
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state x="156" y="30" key="SettingsEditor/0.30.1536.834@0.30.1536.834" timestamp="1596049232522" />
-    <state x="361" y="180" key="Vcs.Push.Dialog.v2" timestamp="1596051306043">
+    <state x="361" y="180" key="Vcs.Push.Dialog.v2" timestamp="1596049505886">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state x="361" y="180" key="Vcs.Push.Dialog.v2/0.30.1536.834@0.30.1536.834" timestamp="1596051306043" />
-    <state x="431" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1596099984497">
-      <screen x="0" y="30" width="1536" height="834" />
-    </state>
-    <state x="431" y="186" width="672" height="678" key="search.everywhere.popup/0.30.1536.834@0.30.1536.834" timestamp="1596099984497" />
+    <state x="361" y="180" key="Vcs.Push.Dialog.v2/0.30.1536.834@0.30.1536.834" timestamp="1596049505886" />
   </component>
 </project>
