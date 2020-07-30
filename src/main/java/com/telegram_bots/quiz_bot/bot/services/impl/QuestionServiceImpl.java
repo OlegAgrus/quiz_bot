@@ -49,4 +49,24 @@ public class QuestionServiceImpl implements QuestionService {
     public Question getQuestionByText(String text) {
         return questionRepository.findQuestionsByQuestionText(text);
     }
+
+    @Override
+    public Question addQuestion(Question question){
+        return questionRepository.save(question);
+    }
+
+    @Override
+    public List<Question> addQuestions(List<Question> questions){
+        return questionRepository.saveAll(questions);
+    }
+
+    @Override
+    public void deleteQuestion(Question question) {
+        questionRepository.delete(question);
+    }
+
+    @Override
+    public void deleteQuestionById(Long id) {
+        questionRepository.deleteById(id);
+    }
 }

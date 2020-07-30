@@ -38,4 +38,24 @@ public class AnswerServiceImpl implements AnswerService {
     public List<Answer> getAnswerByText(String text) {
         return answerRepository.findAnswersByAnswerText(text);
     }
+
+    @Override
+    public Answer addAnswer(Answer answer) {
+        return answerRepository.save(answer);
+    }
+
+    @Override
+    public List<Answer> addAnswers(List<Answer> answers) {
+        return answerRepository.saveAll(answers);
+    }
+
+    @Override
+    public void deleteAnswer(Answer answer) {
+        answerRepository.delete(answer);
+    }
+
+    @Override
+    public void deleteAnswerById(Long id) {
+        answerRepository.deleteById(id);
+    }
 }

@@ -17,4 +17,12 @@ public interface QuestionService {
     Question getQuestionByAnswers(List<Answer> answers);
 
     Question getQuestionByText(String text);
+
+    Question addQuestion(Question question);
+
+    List<Question> addQuestions(List<Question> questions);
+
+    void deleteQuestion(Question question);
+
+    void deleteQuestionById(Long id);
 }

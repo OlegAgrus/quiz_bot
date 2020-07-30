@@ -15,4 +15,12 @@ public interface AnswerService {
     List<Answer> getAnswersByQuestion(Question question);
 
     List<Answer> getAnswerByText(String text);
+
+    Answer addAnswer(Answer answer);
+
+    List<Answer> addAnswers(List<Answer> answers);
+
+    void deleteAnswer(Answer answer);
+
+    void deleteAnswerById(Long id);
 }
