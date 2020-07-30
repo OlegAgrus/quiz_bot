@@ -20,7 +20,22 @@ public class AnswerServiceImpl implements AnswerService {
     }
 
     @Override
+    public List<Answer> getAllAnswers() {
+        return answerRepository.findAll();
+    }
+
+    @Override
+    public Long getAnswersCount() {
+        return answerRepository.count();
+    }
+
+    @Override
     public List<Answer> getAnswersByQuestion(Question question) {
         return question.getAnswers();
+    }
+
+    @Override
+    public List<Answer> getAnswerByText(String text) {
+        return answerRepository.findAnswersByAnswerText(text);
     }
 }

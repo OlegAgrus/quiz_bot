@@ -8,5 +8,11 @@ import java.util.List;
 public interface AnswerService {
     Answer getAnswerById(Long id);
 
+    List<Answer> getAllAnswers();
+
+    Long getAnswersCount();
+
     List<Answer> getAnswersByQuestion(Question question);
+
+    List<Answer> getAnswerByText(String text);
 }
