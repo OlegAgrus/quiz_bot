@@ -1,14 +1,16 @@
 package com.telegram_bots.quiz_bot.bot.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.Set;
+import java.util.List;
 
 @Entity
 @Data
 @ToString(exclude = "answers")
+@EqualsAndHashCode(exclude = "answers")
 @Table(name = "questions")
 public class Question {
     @Id
@@ -23,7 +25,7 @@ public class Question {
     private Double questionScore;
 
     @OneToMany(mappedBy = "question")
-    private Set<Answer> answers;
+    private List<Answer> answers;
 
     public Question(String text, Double score) {
         this.questionText = text;

@@ -1,7 +1,6 @@
 package com.telegram_bots.quiz_bot;
 
 import com.telegram_bots.quiz_bot.bot.TelegramInfoProviderBot;
-import com.telegram_bots.quiz_bot.bot.services.QuestionService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -17,28 +16,28 @@ import java.util.concurrent.ThreadPoolExecutor;
 @SpringBootApplication
 public class QuizBotApplication {
 
-	@Bean
-	public RestTemplate getRestTemplate() {
-		return new RestTemplate();
-	}
+    public static void main(String[] args) {
+        ApiContextInitializer.init();
+        ConfigurableApplicationContext context = SpringApplication.run(QuizBotApplication.class, args);
 
-	@Bean
-	public ThreadPoolExecutor telegramBotThreadPool() {
-		int threadCount = 10;
-		return (ThreadPoolExecutor) Executors.newFixedThreadPool(threadCount);
-	}
+        TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
+        TelegramInfoProviderBot telegramInfoProviderBot = context.getBean(TelegramInfoProviderBot.class);
 
-	public static void main(String[] args) {
-		ApiContextInitializer.init();
-		ConfigurableApplicationContext context = SpringApplication.run(QuizBotApplication.class, args);
+        try {
+            telegramBotsApi.registerBot(telegramInfoProviderBot);
+        } catch (TelegramApiRequestException e) {
+            e.printStackTrace();
+        }
+    }
 
-		TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
-		TelegramInfoProviderBot telegramInfoProviderBot = context.getBean(TelegramInfoProviderBot.class);
+    @Bean
+    public RestTemplate getRestTemplate() {
+        return new RestTemplate();
+    }
 
-		try {
-			telegramBotsApi.registerBot(telegramInfoProviderBot);
-		} catch (TelegramApiRequestException e) {
-			e.printStackTrace();
-		}
-	}
+    @Bean
+    public ThreadPoolExecutor telegramBotThreadPool() {
+        int threadCount = 10;
+        return (ThreadPoolExecutor) Executors.newFixedThreadPool(threadCount);
+    }
 }

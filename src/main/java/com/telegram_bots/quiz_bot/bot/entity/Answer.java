@@ -1,6 +1,7 @@
 package com.telegram_bots.quiz_bot.bot.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 import javax.persistence.*;
@@ -8,6 +9,7 @@ import javax.persistence.*;
 @Entity
 @Data
 @ToString(exclude = "question")
+@EqualsAndHashCode(exclude = "question")
 @Table(name = "answers")
 public class Answer {
     @Id

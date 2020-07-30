@@ -46,8 +46,7 @@ public class TelegramInfoProviderBot extends TelegramLongPollingBot implements C
 
                 if (message.startsWith(BotConstants.COMMAND_PREFIX)) {
                     onCommandReceived(update, message);
-                }
-                else {
+                } else {
                     onNonCommandReceived(update, message);
                 }
             }
@@ -57,9 +56,9 @@ public class TelegramInfoProviderBot extends TelegramLongPollingBot implements C
     private void onCommandReceived(Update update, String message) {
         String commandKey = message.split(" ")[0];
         Optional
-            .ofNullable(commandMap.get(commandKey))
-            .orElse(commandMap.get(BotConstants.CURRENT_INCORRECT_BOT_COMMAND))
-            .executeCommand(update, this);
+                .ofNullable(commandMap.get(commandKey))
+                .orElse(commandMap.get(BotConstants.CURRENT_INCORRECT_BOT_COMMAND))
+                .executeCommand(update, this);
     }
 
     private void onNonCommandReceived(Update update, String message) {
