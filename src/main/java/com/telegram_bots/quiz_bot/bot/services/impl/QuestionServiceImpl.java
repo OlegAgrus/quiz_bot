@@ -35,7 +35,7 @@ public class QuestionServiceImpl implements QuestionService {
     }
 
     @Override
-    public Question findQuestionByAnswers(List<Answer> answers) {
+    public Question getQuestionByAnswers(List<Answer> answers) {
         Question question = answers.get(0).getQuestion();
         for (Answer answer : answers) {
             if (!answer.getQuestion().equals(question)) {
@@ -43,5 +43,10 @@ public class QuestionServiceImpl implements QuestionService {
             }
         }
         return question;
+    }
+
+    @Override
+    public Question getQuestionByText(String text) {
+        return questionRepository.findQuestionsByQuestionText(text);
     }
 }

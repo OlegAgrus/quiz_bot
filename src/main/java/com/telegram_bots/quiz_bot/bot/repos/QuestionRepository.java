@@ -10,4 +10,6 @@ import java.util.List;
 @Repository
 public interface QuestionRepository extends JpaRepository<Question, Long> {
     List<Question> findQuestionsByQuestionScore(Double score);
+
+    Question findQuestionsByQuestionText(String text);
 }

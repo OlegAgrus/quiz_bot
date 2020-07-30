@@ -14,5 +14,7 @@ public interface QuestionService {
 
     List<Question> getQuestionsByQuestionScore(Double score);
 
-    Question findQuestionByAnswers(List<Answer> answers);
+    Question getQuestionByAnswers(List<Answer> answers);
+
+    Question getQuestionByText(String text);
 }
