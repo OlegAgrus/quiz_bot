@@ -23,4 +23,6 @@ public interface AnswerService {
     void deleteAnswer(Answer answer);
 
     void deleteAnswerById(Long id);
+
+    List<Answer> getRightAnswersByQuestion(Question question);
 }
