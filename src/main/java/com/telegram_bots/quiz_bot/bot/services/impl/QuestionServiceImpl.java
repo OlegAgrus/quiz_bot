@@ -47,7 +47,7 @@ public class QuestionServiceImpl implements QuestionService {
 
     @Override
     public Question getQuestionByText(String text) {
-        return questionRepository.findQuestionsByQuestionText(text);
+        return questionRepository.findQuestionByQuestionText(text);
     }
 
     @Override
