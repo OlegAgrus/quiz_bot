@@ -7,8 +7,6 @@ import com.telegram_bots.quiz_bot.bot.services.AnswerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 @Service
@@ -62,7 +60,7 @@ public class AnswerServiceImpl implements AnswerService {
     }
 
     @Override
-    public List<Answer> getRightAnswersByQuestion(Question question){
+    public List<Answer> getRightAnswersByQuestion(Question question) {
         List<Answer> answerList = question.getAnswers();
         answerList.removeIf(answer -> !answer.getIsRightAnswer());
         return answerList;

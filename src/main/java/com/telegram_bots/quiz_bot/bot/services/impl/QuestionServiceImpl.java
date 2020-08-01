@@ -51,12 +51,12 @@ public class QuestionServiceImpl implements QuestionService {
     }
 
     @Override
-    public Question addQuestion(Question question){
+    public Question addQuestion(Question question) {
         return questionRepository.save(question);
     }
 
     @Override
-    public List<Question> addQuestions(List<Question> questions){
+    public List<Question> addQuestions(List<Question> questions) {
         return questionRepository.saveAll(questions);
     }
 
