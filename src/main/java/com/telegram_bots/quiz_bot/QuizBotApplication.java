@@ -12,33 +12,32 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
-//Main app
+
 @SpringBootApplication
 public class QuizBotApplication {
 
-	@Bean
-	public RestTemplate getRestTemplate() {
-		return new RestTemplate();
-	}
+    public static void main(String[] args) {
+        ApiContextInitializer.init();
+        ConfigurableApplicationContext context = SpringApplication.run(QuizBotApplication.class, args);
 
-	@Bean
-	public ThreadPoolExecutor telegramBotThreadPool() {
-		int threadCount = 10;
-		return (ThreadPoolExecutor) Executors.newFixedThreadPool(threadCount);
-	}
+        TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
+        TelegramInfoProviderBot telegramInfoProviderBot = context.getBean(TelegramInfoProviderBot.class);
 
-	public static void main(String[] args) {
-		ApiContextInitializer.init();
-		ConfigurableApplicationContext context = SpringApplication.run(QuizBotApplication.class, args);
+        try {
+            telegramBotsApi.registerBot(telegramInfoProviderBot);
+        } catch (TelegramApiRequestException e) {
+            e.printStackTrace();
+        }
+    }
 
-		TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
-		TelegramInfoProviderBot telegramInfoProviderBot = context.getBean(TelegramInfoProviderBot.class);
+    @Bean
+    public RestTemplate getRestTemplate() {
+        return new RestTemplate();
+    }
 
-		try {
-			telegramBotsApi.registerBot(telegramInfoProviderBot);
-		} catch (TelegramApiRequestException e) {
-			e.printStackTrace();
-		}
-	}
-
+    @Bean
+    public ThreadPoolExecutor telegramBotThreadPool() {
+        int threadCount = 10;
+        return (ThreadPoolExecutor) Executors.newFixedThreadPool(threadCount);
+    }
 }
