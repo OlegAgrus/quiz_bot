@@ -2,6 +2,8 @@ package com.telegram_bots.quiz_bot.bot;
 
 import com.telegram_bots.quiz_bot.bot.command.BotCommand;
 import com.telegram_bots.quiz_bot.bot.command.CommandContainer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -21,6 +23,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 @Component
 public class TelegramInfoProviderBot extends TelegramLongPollingBot implements CommandContainer {
 
+    private Logger logger = LoggerFactory.getLogger(TelegramInfoProviderBot.class);
+
     @Value("${bot.username}")
     private String botUserName;
 
@@ -34,7 +38,7 @@ public class TelegramInfoProviderBot extends TelegramLongPollingBot implements C
 
     @PostConstruct
     public void init() {
-        System.out.println("Initialized bot with username: " + botUserName + " and token: " + botToken);
+        logger.info("Initialized bot with username: " + botUserName);
     }
 
     @Override
@@ -42,7 +46,8 @@ public class TelegramInfoProviderBot extends TelegramLongPollingBot implements C
         threadPoolExecutor.execute(() -> {
             if (update.hasMessage()) {
                 String message = update.getMessage().getText();
-                System.out.println("Thread: " + Thread.currentThread().getName() + " " + Thread.currentThread().getId() + " Chat: " + update.getMessage().getChatId() + " User: " + update.getMessage().getChat().getUserName() + " Message recieved: " + message);
+
+                logger.debug("Update received, Chat: " + update.getMessage().getChatId() + ", User: " + update.getMessage().getChat().getUserName() + ", Message: " + message);
 
                 if (message.startsWith(BotConstants.COMMAND_PREFIX)) {
                     onCommandReceived(update, message);
@@ -50,6 +55,9 @@ public class TelegramInfoProviderBot extends TelegramLongPollingBot implements C
                 else {
                     onNonCommandReceived(update, message);
                 }
+            }
+            else {
+                logger.warn("Update has no message!");
             }
         });
     }
@@ -98,6 +106,7 @@ public class TelegramInfoProviderBot extends TelegramLongPollingBot implements C
 
     @Override
     public void registerCommand(BotCommand command) {
+        logger.debug("Command registered: " + command.getCommandKey());
         commandMap.put(command.getCommandKey(), command);
     }
 }
