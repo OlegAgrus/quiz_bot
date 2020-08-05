@@ -9,16 +9,33 @@ import org.telegram.telegrambots.meta.bots.AbsSender;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import java.io.Serializable;
+import java.util.Arrays;
+import java.util.stream.Stream;
 
 public abstract class AbstractBotCommand implements BotCommand {
 
     private Logger logger = LoggerFactory.getLogger(AbstractBotCommand.class);
 
-    @Override
-    public void executeCommand(Update update, AbsSender absSender) {
-        logger.debug("Execution of command: " + getCommandKey());
+    private AbsSender absSender;
 
-        BotApiMethod<? extends Serializable> botApiMethod = processUpdate(update);
+    @Override
+    public void saveAbsSender(AbsSender absSender) {
+        this.absSender = absSender;
+    }
+
+    @Override
+    public void executeCommand(Update update) {
+        String[] args = parseArgs(update);
+
+        logger.debug("Execution of command: " + getCommandKey() + ", with args: " + Arrays.toString(args));
+
+        BotApiMethod<? extends Serializable> botApiMethod = processUpdate(update, args);
+        sendMessage(botApiMethod);
+
+        logger.debug("Command executed");
+    }
+
+    public void sendMessage(BotApiMethod<? extends Serializable> botApiMethod) {
         if (botApiMethod != null) {
             try {
                 absSender.execute(botApiMethod);
@@ -26,8 +43,6 @@ public abstract class AbstractBotCommand implements BotCommand {
                 logger.warn("Execute method failed. " + e.getMessage());
             }
         }
-
-        logger.debug("Command executed");
     }
 
     public SendMessage createTextMessage(Update update, String message) {
@@ -38,6 +53,13 @@ public abstract class AbstractBotCommand implements BotCommand {
         return sendMessage;
     }
 
-    public abstract BotApiMethod<? extends Serializable> processUpdate(Update update);
+    private String[] parseArgs(Update update) {
+        return Stream
+                .of(update.getMessage().getText().split(" "))
+                .skip(1)
+                .toArray(String[]::new);
+    }
+
+    public abstract BotApiMethod<? extends Serializable> processUpdate(Update update, String[] args);
 
 }

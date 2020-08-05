@@ -14,8 +14,11 @@ public interface BotCommand {
     @Autowired
     default void registerYourself(TelegramInfoProviderBot telegramInfoProviderBot) {
         telegramInfoProviderBot.registerCommand(this);
+        saveAbsSender(telegramInfoProviderBot);
     }
 
-    void executeCommand(Update update, AbsSender absSender);
+    void saveAbsSender(AbsSender absSender);
+
+    void executeCommand(Update update);
 
 }

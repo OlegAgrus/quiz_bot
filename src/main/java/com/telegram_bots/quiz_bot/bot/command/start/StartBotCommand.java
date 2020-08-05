@@ -1,5 +1,6 @@
-package com.telegram_bots.quiz_bot.bot.command;
+package com.telegram_bots.quiz_bot.bot.command.start;
 
+import com.telegram_bots.quiz_bot.bot.command.AbstractBotCommand;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.objects.Update;
@@ -19,12 +20,8 @@ public class StartBotCommand extends AbstractBotCommand {
     }
 
     @Override
-    public BotApiMethod<? extends Serializable> processUpdate(Update update) {
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+    public BotApiMethod<? extends Serializable> processUpdate(Update update, String[] args) {
+        sendMessage(createTextMessage(update, "..."));
         return createTextMessage(update, MESSAGE);
     }
 
