@@ -1,6 +1,6 @@
 package com.telegram_bots.quiz_bot.bot;
 
-import com.telegram_bots.quiz_bot.bot.command.IncorrectCommandBotCommand;
+import com.telegram_bots.quiz_bot.bot.command.incorrect_command.IncorrectCommandBotCommand;
 
 public interface BotConstants {
 

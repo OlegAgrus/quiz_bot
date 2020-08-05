@@ -8,13 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
-import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import javax.annotation.PostConstruct;
-import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -49,11 +47,13 @@ public class TelegramInfoProviderBot extends TelegramLongPollingBot implements C
 
                 logger.debug("Update received, Chat: " + update.getMessage().getChatId() + ", User: " + update.getMessage().getChat().getUserName() + ", Message: " + message);
 
-                if (message.startsWith(BotConstants.COMMAND_PREFIX)) {
-                    onCommandReceived(update, message);
-                }
-                else {
-                    onNonCommandReceived(update, message);
+                if (message != null) {
+                    if (message.startsWith(BotConstants.COMMAND_PREFIX)) {
+                        onCommandReceived(update, message);
+                    }
+                    else {
+                        onNonCommandReceived(update, message);
+                    }
                 }
             }
             else {
@@ -67,19 +67,11 @@ public class TelegramInfoProviderBot extends TelegramLongPollingBot implements C
         Optional
             .ofNullable(commandMap.get(commandKey))
             .orElse(commandMap.get(BotConstants.CURRENT_INCORRECT_BOT_COMMAND))
-            .executeCommand(update, this);
+            .executeCommand(update);
     }
 
     private void onNonCommandReceived(Update update, String message) {
         sendMsg(update.getMessage().getChatId().toString(), "Хулі ти мені пишеш");
-    }
-
-    private void executeMethod(BotApiMethod<? extends Serializable> botApiMethod) {
-        try {
-            execute(botApiMethod);
-        } catch (TelegramApiException e) {
-            e.printStackTrace();
-        }
     }
 
     private void sendMsg(String chatId, String s) {
@@ -109,4 +101,5 @@ public class TelegramInfoProviderBot extends TelegramLongPollingBot implements C
         logger.debug("Command registered: " + command.getCommandKey());
         commandMap.put(command.getCommandKey(), command);
     }
+
 }
